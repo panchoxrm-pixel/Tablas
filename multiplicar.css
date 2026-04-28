@@ -1,0 +1,95 @@
+/* 1. EL RESET: Preparamos el terreno */
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. EL CUERPO (BODY): Distribución excelente y relajante */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e8f5e9; /* Verde menta pastel: Relajante */
+    
+    /* FLEXBOX para centrar y distribuir */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Separa el contenido del pie de página */
+    
+    min-height: 100vh; /* Ocupa todo el alto de la pantalla */
+    padding: 40px 20px;
+}
+
+/* 3. EL BOTÓN: Estilo infantil (redondeado) y sobrio */
+.btnProbar {
+    background-color: #bbdefb; /* Azul pastel suave */
+    color: #2c3e50;            /* Gris oscuro para legibilidad */
+    padding: 15px 40px;
+    border: 2px solid #90caf9; /* Borde sutil */
+    border-radius: 50px;       /* Forma de cápsula: amigable/infantil */
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    
+    /* Transición suave para el efecto hover */
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btnProbar:hover {
+    transform: scale(1.05);
+    background-color: #90caf9; /* Se oscurece un poco al tocarlo */
+}
+
+/* 4. LA TABLA: Contenedor minimalista */
+.contenedorTabla {
+    background: white;
+    padding: 30px;
+    border-radius: 30px; /* Bordes muy redondeados: estilo infantil */
+    
+    /* Sombra muy suave: Minimalista */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}
+
+/* 5. TEXTO DENTRO DE LA TABLA */
+.contenedorTabla h2 {
+    color: #4db6ac; /* Verde turquesa suave */
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.contenedorTabla p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #555;
+    background-color: #f1f8e9; /* Fondo suave para cada línea */
+    padding: 8px;
+    border-radius: 12px;       /* Filas redondeadas */
+}
+
+/* 6. PIE DE PÁGINA: Personalización (Tu nickname) */
+.piePagina {
+    margin-top: 40px;
+    color: #7f8c8d; /* Gris sobrio */
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* 7. DISEÑO RESPONSIVE: Adaptación a móviles */
+@media (max-width: 480px) {
+    body {
+        padding: 20px 10px;
+    }
+    
+    .contenedorTabla {
+        max-width: 100%;
+    }
+    
+    .btnProbar {
+        width: 80%; /* Botón más ancho en celulares */
+    }
+}
